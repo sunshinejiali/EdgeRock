@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "shape_and_mask_cases": 12,
+  "incremental_merge": "PASS",
+  "max_score_absolute_error": 5.960464477539063e-08,
+  "max_read_absolute_error": 2.384185791015625e-07,
+  "onnxruntime": "1.31.1",
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "io": "CPU buffered pread/pwrite equivalent; file writes plus pread; NOT GDS",
+  "weights": "synthetic, not GLM or trained RMA weights",
+  "not_validated": [
+    "GLM 5.3 integration/quality",
+    "computational SSD execution",
+    "GPU-direct I/O",
+    "physical SSD medium",
+    "latency or throughput improvement"
+  ]
+}

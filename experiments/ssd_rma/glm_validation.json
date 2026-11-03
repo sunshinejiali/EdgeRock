@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "cases": 4,
+  "index_heads": 32,
+  "index_dim": 128,
+  "mla_rank": 512,
+  "rope_dim": 64,
+  "attention_heads": 64,
+  "tested_topk_2048": true,
+  "max_score_error": 3.5762786865234375e-07,
+  "max_latent_read_error": 3.5762786865234375e-07,
+  "scope": "FP32 synthetic post-projection DSA and absorbed MLA, CPU file I/O",
+  "not_validated": [
+    "checkpoint weights and BF16/FP8 numerics",
+    "GLM end-to-end generation",
+    "ARM execution",
+    "GDS direct path",
+    "SSD physical device",
+    "performance"
+  ]
+}
